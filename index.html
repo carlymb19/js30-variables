@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<!-- Carly Brown - 9/20 -->
+<!-- Adapted from https://courses.wesbos.com/account/access/64ea54d5119d0f571e0842f1
+     Playing with CSS Variables and JS -->
+<!-- New attribute: data- -->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+        <meta name="author" content="Carly Brown">
+        <meta name="date" content="09-20-2023">
+        <title>Scoped CSS Variables and JS</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.gif">
+    </head>
+    
+    <body> 
+        <header>
+            <h1>Update CSS Variables with <span class='highlight'>JS</span></h1> <!-- Turned h2 into h1 for logical heirarchy & 
+                changed class from 'hl' to 'highlight' to avoid class name from looking like h1 -->
+        </header>
+
+        <main>
+            <div class="controls">
+                <label for="image">Image:</label>
+                <input id="image" type="range" name="image" min="0" max="4"><br>
+
+                <label for="spacing">Spacing:</label>
+                <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+
+                <label for="size">Size:</label> <!-- Changed adjusting the blur to adjusting the size for fun -->
+                <input id="size" type="range" name="size" min="10" max="1000" value="10" data-sizing="px">
+
+                <label for="base">Base Color</label> 
+                <input id="base" type="color" name="base" value="#e0ada2"> <!-- Changed default value to complement 
+                    default photo and background color -->
+            </div>
+
+            <img src="https://images.unsplash.com/photo-1693168240236-b84042ff1ecc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" id="imageDisplay" alt="Randomized Image"> 
+        </main>
+
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
+

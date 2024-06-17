@@ -1,0 +1,50 @@
+/* Carly Brown - 9/21 */
+/* Adapted from https://courses.wesbos.com/account/access/64ea54d5119d0f571e0842f1
+   Playing with CSS Variables and JS */
+
+:root {
+    box-sizing: border-box;
+    --base: #e0ada2; /* changed default base color to complement default photo and background color */
+    --spacing: 10px;
+    --size: 100px; /* changed blur to size */
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+/* JavaScript modified CSS */
+
+img {
+    padding: var(--spacing);
+    background: var(--base);
+    width: var(--size); /* changed filter to width */
+}
+
+.highlight {
+    color: var(--base);
+}
+/* */
+
+body {
+    text-align: center;
+    background: #1C2621; /* Changed text and background color to fit my personal style */
+    color: #F2F0D5;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+  }
+
+.controls {
+    margin-bottom: 50px;
+}
+
+input {
+    width: 100px;
+}
+
+h1 {
+    font-size: 1.5em;
+}
